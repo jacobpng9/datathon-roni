@@ -1,3 +1,5 @@
+
+
 export const kpis = [
   {
     _id: "63bf8239f03239e002001612",
@@ -5,27 +7,6 @@ export const kpis = [
     totalRevenue: "$283000.00",
     totalExpenses: "$71000.00",
     monthlyData: [
-      {
-        month: "january",
-        revenue: "$15989.64",
-        expenses: "$14231.73",
-        operationalExpenses: "$10340.03",
-        nonOperationalExpenses: "$4891.70",
-      },
-      {
-        month: "february",
-        revenue: "$15832.77",
-        expenses: "$11677.84",
-        operationalExpenses: "$7006.69",
-        nonOperationalExpenses: "$8661.15",
-      },
-      {
-        month: "march",
-        revenue: "$16481.27",
-        expenses: "$14664.03",
-        operationalExpenses: "$8797.42",
-        nonOperationalExpenses: "$7866.61",
-      },
       {
         month: "april",
         revenue: "$18229.38",
@@ -74,21 +55,7 @@ export const kpis = [
         expenses: "$12990.58",
         operationalExpenses: "$3594.35",
         nonOperationalExpenses: "$9396.23",
-      },
-      {
-        month: "november",
-        revenue: "$22655.03",
-        expenses: "$17140.80",
-        operationalExpenses: "$10284.48",
-        nonOperationalExpenses: "$3856.32",
-      },
-      {
-        month: "december",
-        revenue: "$17757.75",
-        expenses: "$15266.97",
-        operationalExpenses: "$9160.18",
-        nonOperationalExpenses: "$4106.79",
-      },
+      }
     ],
     dailyData: [
       { date: "2022-01-02", revenue: "$1498.94", expenses: "$430.64" },
