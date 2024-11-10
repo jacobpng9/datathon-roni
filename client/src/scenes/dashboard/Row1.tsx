@@ -145,7 +145,7 @@ const Row1 = () => {
         />
         <ResponsiveContainer width="100%" height="100%">
           <LineChart
-            width={500}
+            width={1000}
             height={400}
             data={revenueProfit}
             margin={{
@@ -166,6 +166,7 @@ const Row1 = () => {
               tickLine={false}
               axisLine={false}
               style={{ fontSize: "10px" }}
+              domain={[0, 80000]}
             />
             <YAxis
               yAxisId="right"

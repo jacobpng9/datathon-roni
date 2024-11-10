@@ -21,7 +21,7 @@ import {
 } from "recharts";
 
 const pieData = [
-  { name: "Group A", value: 600 },
+  { name: "Group A", value: 400 },
   { name: "Group B", value: 400 },
 ];
 
@@ -141,7 +141,7 @@ const Row2 = () => {
           <Box ml="-0.7rem" flexBasis="40%" textAlign="center">
             <Typography variant="h5">Target Sales</Typography>
             <Typography m="0.3rem 0" variant="h3" color={palette.primary[300]}>
-              83
+              15000
             </Typography>
             <Typography variant="h6">
               Finance goals of the campaign that is desired

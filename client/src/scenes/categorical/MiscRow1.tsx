@@ -9,8 +9,7 @@ import {
   AreaChart,
   BarChart,
   Bar,
-  PieChart,
-  Pie,
+  LineChart,
   XAxis,
   YAxis,
   Legend,
@@ -70,7 +69,10 @@ const MiscRow1 = () => {
           sideText="+4%"
         />
         <ResponsiveContainer width="100%" height="100%">
-          <AreaChart></AreaChart>
+          <AreaChart
+          >
+            
+          </AreaChart>
         </ResponsiveContainer>
       </DashboardBox>
       <DashboardBox gridArea="b">
@@ -80,28 +82,9 @@ const MiscRow1 = () => {
           sideText="+4%"
         />
         <ResponsiveContainer width="100%" height="100%">
-          <PieChart width={730} height={250}>
-            <Pie
-              data={data01}
-              dataKey="value"
-              nameKey="name"
-              cx="50%"
-              cy="50%"
-              outerRadius={50}
-              fill="#8884d8"
-            />
-            <Pie
-              data={data02}
-              dataKey="value"
-              nameKey="name"
-              cx="50%"
-              cy="50%"
-              innerRadius={60}
-              outerRadius={80}
-              fill="#82ca9d"
-              label
-            />
-          </PieChart>
+          <LineChart>
+            
+          </LineChart>
         </ResponsiveContainer>
       </DashboardBox>
       <DashboardBox gridArea="c">
@@ -111,7 +94,37 @@ const MiscRow1 = () => {
           sideText="+4%"
         />
         <ResponsiveContainer width="100%" height="100%">
-          <BarChart></BarChart>
+          <BarChart
+          >
+            <defs>
+              <linearGradient id="colorRevenue" x1="0" y1="0" x2="0" y2="1">
+                <stop
+                  offset="5%"
+                  stopColor={palette.primary[300]}
+                  stopOpacity={0.8}
+                />
+                <stop
+                  offset="95%"
+                  stopColor={palette.primary[300]}
+                  stopOpacity={0}
+                />
+              </linearGradient>
+            </defs>
+            <CartesianGrid vertical={false} stroke={palette.grey[800]} />
+            <XAxis
+              dataKey="name"
+              axisLine={false}
+              tickLine={false}
+              style={{ fontSize: "10px" }}
+            />
+            <YAxis
+              axisLine={false}
+              tickLine={false}
+              style={{ fontSize: "10px" }}
+            />
+            <Tooltip />
+            <Bar dataKey="revenue" fill="url(#colorRevenue)" />
+          </BarChart>
         </ResponsiveContainer>
       </DashboardBox>
     </>
