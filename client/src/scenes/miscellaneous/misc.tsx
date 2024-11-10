@@ -1,1 +1,0 @@
-// Categorical values for later stuff

@@ -10,9 +10,9 @@ export const kpis = [
       {
         month: "april",
         revenue: "$58291.97",
-        expenses: "$17495.38",
-        operationalExpenses: "$7401.91",
-        nonOperationalExpenses: "$2934.61",
+        expenses: "47145.38",
+        operationalExpenses: "$29560",
+        nonOperationalExpenses: "$17495.38",
       },
       {
         month: "may",
@@ -29460,6 +29460,16 @@ export const products = [
       ordernum: "277001",
     }
   ];
+
+
+export const categories = [
+  
+]
+
+
+
+
+
 
 
 
