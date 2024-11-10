@@ -64,8 +64,8 @@ const Row1 = () => {
     <>
       <DashboardBox gridArea="a">
         <BoxHeader
-          title="Revenue and Expenses"
-          subtitle="top line represents revenue, bottom line represents expenses"
+          title="Revenue and Predicted Expenses"
+          subtitle="top line represents revenue, bottom line represents predicted expenses based off of approximation"
           sideText="+4%"
         />
         <ResponsiveContainer width="100%" height="100%">

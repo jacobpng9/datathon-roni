@@ -46,12 +46,8 @@ export interface GetProductsResponse {
 }
 
 export interface GetCategoriesResponse {
-  id: string;
-  names: string;
-  __v: number;
-  price: number;
-  expense: number;
-  transactions: Array<string>;
+  name: string;
+  count: string;
   createdAt: string;
   updatedAt: string;
 }

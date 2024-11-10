@@ -5,10 +5,7 @@ const router = express.Router();
 
 router.get("/categories", async (req, res) => {
   try {
-    const transactions = await Category.find()
-      .limit(50)
-      .sort({ createdOn: -1 });
-
+    const categories = await Category.find()
     res.status(200).json(categories);
   } catch (error) {
     res.status(404).json({ message: error.message });

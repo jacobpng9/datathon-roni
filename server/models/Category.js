@@ -7,25 +7,16 @@ loadType(mongoose);
 const CategorySchema = new Schema(
   {
     // Replace here with multiple types respondednt to categorical
-    buyer: {
+    name: {
       type: String,
-      required: true,
     },
-    amount: {
-      type: mongoose.Types.Currency,
-      currency: "USD",
-      get: (v) => v / 100,
+    count: {
+
     },
-    productIds: [
-      {
-        type: mongoose.Schema.Types.ObjectId,
-        ref: "Product",
-      },
-    ],
   },
   { timestamps: true, toJSON: { getters: true } }
 );
 
-const Category = mongoose.model("category", CategorySchema);
+const Category = mongoose.model("Category", CategorySchema);
 
 export default Category;

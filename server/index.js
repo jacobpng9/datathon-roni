@@ -11,7 +11,9 @@ import transactionRoutes from "./routes/transaction.js";
 import KPI from "./models/KPI.js";
 import Product from "./models/Product.js";
 import Transaction from "./models/Transaction.js";
-import { kpis, products, transactions } from "./data/data.js";
+import { kpis, products, transactions, categories } from "./data/data.js";
+import Category from "./models/Category.js";
+import categoryRoutes from "./routes/transaction.js";
 
 /* CONFIGURATIONS */
 dotenv.config();
@@ -28,6 +30,7 @@ app.use(cors());
 app.use("/kpi", kpiRoutes);
 app.use("/product", productRoutes);
 app.use("/transaction", transactionRoutes);
+app.use("/category", categoryRoutes);
 
 /* MONGOOSE SETUP */
 const PORT = process.env.PORT || 9000;
@@ -44,5 +47,6 @@ mongoose
     KPI.insertMany(kpis);
     Product.insertMany(products);
     Transaction.insertMany(transactions);
+    Category.insertMany(categories);
   })
   .catch((error) => console.log(`${error} did not connect`));

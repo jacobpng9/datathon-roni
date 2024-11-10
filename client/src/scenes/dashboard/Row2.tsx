@@ -21,8 +21,8 @@ import {
 } from "recharts";
 
 const pieData = [
-  { name: "Group A", value: 400 },
-  { name: "Group B", value: 400 },
+  { name: "Group A", value: 3423 },
+  { name: "Group B", value: 6577 },
 ];
 
 const Row2 = () => {
@@ -141,7 +141,7 @@ const Row2 = () => {
           <Box ml="-0.7rem" flexBasis="40%" textAlign="center">
             <Typography variant="h5">Target Sales</Typography>
             <Typography m="0.3rem 0" variant="h3" color={palette.primary[300]}>
-              15000
+              10000
             </Typography>
             <Typography variant="h6">
               Finance goals of the campaign that is desired
@@ -149,18 +149,18 @@ const Row2 = () => {
           </Box>
           <Box flexBasis="40%">
             <Typography variant="h5">Losses in Revenue</Typography>
-            <Typography variant="h6">Losses are down 25%</Typography>
+            <Typography variant="h6">Losses are down 17.39%</Typography>
             <Typography mt="0.4rem" variant="h5">
               Profit Margins
             </Typography>
             <Typography variant="h6">
-              Margins are up by 30% from last month.
+              Margins are down by 17.01% from last month.
             </Typography>
           </Box>
         </FlexBetween>
       </DashboardBox>
       <DashboardBox gridArea="f">
-        <BoxHeader title="Product Prices vs Expenses" sideText="+4%" />
+        <BoxHeader title="Product Prices vs Predicted Expenses" sideText="+4%" />
         <ResponsiveContainer width="100%" height="100%">
           <ScatterChart
             margin={{
