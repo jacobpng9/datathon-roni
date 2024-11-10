@@ -49,9 +49,9 @@ const Row2 = () => {
   const productExpenseData = useMemo(() => {
     return (
       productData &&
-      productData.map(({ _id, price, expense }) => {
+      productData.map(({ names, price, expense }) => {
         return {
-          id: _id,
+          names: names,
           price: price,
           expense: expense,
         };

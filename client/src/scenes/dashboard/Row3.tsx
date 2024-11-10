@@ -41,8 +41,8 @@ const Row3 = () => {
 
   const productColumns = [
     {
-      field: "_id",
-      headerName: "id",
+      field: "ordernum",
+      headerName: "Order #",
       flex: 1,
     },
     {
@@ -61,14 +61,9 @@ const Row3 = () => {
 
   const transactionColumns = [
     {
-      field: "_id",
-      headerName: "id",
+      field: "names",
+      headerName: "names",
       flex: 1,
-    },
-    {
-      field: "buyer",
-      headerName: "Buyer",
-      flex: 0.67,
     },
     {
       field: "amount",
@@ -89,7 +84,7 @@ const Row3 = () => {
     <>
       <DashboardBox gridArea="g">
         <BoxHeader
-          title="List of Products"
+          title="Previous Transactions"
           sideText={`${productData?.length} products`}
         />
         <Box

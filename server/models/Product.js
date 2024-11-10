@@ -6,6 +6,9 @@ loadType(mongoose);
 
 const ProductSchema = new Schema(
   {
+    names: {
+      type: String
+    },
     price: {
       type: mongoose.Types.Currency,
       currency: "USD",
@@ -16,12 +19,9 @@ const ProductSchema = new Schema(
       currency: "USD",
       get: (v) => v / 100,
     },
-    transactions: [
-      {
-        type: mongoose.Schema.Types.ObjectId,
-        ref: "Transaction",
-      },
-    ],
+    ordernum: {
+      
+    }
   },
   { timestamps: true, toJSON: { getters: true } }
 );

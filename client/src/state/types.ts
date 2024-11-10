@@ -22,7 +22,7 @@ export interface Day {
 
 export interface GetKpisResponse {
   id: string;
-  _id: string;
+  names: string;
   __v: number;
   totalProfit: number;
   totalRevenue: number;
@@ -36,7 +36,7 @@ export interface GetKpisResponse {
 
 export interface GetProductsResponse {
   id: string;
-  _id: string;
+  names: string;
   __v: number;
   price: number;
   expense: number;
@@ -45,13 +45,3 @@ export interface GetProductsResponse {
   updatedAt: string;
 }
 
-export interface GetTransactionsResponse {
-  id: string;
-  _id: string;
-  __v: number;
-  buyer: string;
-  amount: number;
-  productIds: Array<string>;
-  createdAt: string;
-  updatedAt: string;
-}
