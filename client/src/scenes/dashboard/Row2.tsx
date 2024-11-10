@@ -14,6 +14,7 @@ import {
   Line,
   PieChart,
   Pie,
+  Sector,
   Cell,
   ScatterChart,
   Scatter,
@@ -21,8 +22,195 @@ import {
 } from "recharts";
 
 const pieData = [
-  { name: "Group A", value: 3423 },
-  { name: "Group B", value: 6577 },
+  {
+    name: "regular",
+    count: "18353",
+  },
+  {
+    name: "gluten free",
+    count: "1",
+  },
+  {
+    name: "cheddar",
+    count: "14332",
+  },
+  {
+    name: "pepper jack",
+    count: "4830",
+  },
+  {
+    name: "alfredo",
+    count: "3901",
+  },
+  {
+    name: "no meat",
+    count: "3486",
+  },
+  {
+    name: "grilled chicken",
+    count: "6224",
+  },
+  {
+    name: "pulled pork",
+    count: "1980",
+  },
+  {
+    name: "brisket",
+    count: "6927",
+  },
+  {
+    name: "bacon",
+    count: "4564",
+  },
+  {
+    name: "ham",
+    count: "732",
+  },
+  {
+    name: "no toppings",
+    count: "2284",
+  },
+  {
+    name: "broccoli",
+    count: "4499",
+  },
+  {
+    name: "corn",
+    count: "4243",
+  },
+  {
+    name: "onions",
+    count: "5714",
+  },
+  {
+    name: "jalapenos",
+    count: "3944",
+  },
+  {
+    name: "tomatoes",
+    count: "3217",
+  },
+  {
+    name: "bell peppers",
+    count: "3678",
+  },
+  {
+    name: "mushrooms",
+    count: "4270",
+  },
+  {
+    name: "pineapple",
+    count: "1096",
+  },
+  {
+    name: "parmesan",
+    count: "18727",
+  },
+  {
+    name: "breadcrumbs",
+    count: "10874",
+  },
+  {
+    name: "no drizzle",
+    count: "3901",
+  },
+  {
+    name: "BBQ",
+    count: "200",
+  },
+  {
+    name: "garlic parmesan",
+    count: "6696",
+  },
+  {
+    name: "buffalo",
+    count: "2807",
+  },
+  {
+    name: "pesto",
+    count: "2145",
+  },
+  {
+    name: "ranch",
+    count: "3649",
+  },
+  {
+    name: "hot honey",
+    count: "2150",
+  },
+  {
+    name: "no side",
+    count: "12267",
+  },
+  {
+    name: "garlic bread",
+    count: "7340",
+  },
+  {
+    name: "cheesy garlic bread",
+    count: "5295",
+  },
+  {
+    name: "cheesecake",
+    count: "965",
+  },
+  {
+    name: "large chocolate chunk cookie",
+    count: "92",
+  },
+  {
+    name: "doritos",
+    count: "44",
+  },
+  {
+    name: "cheetos",
+    count: "41",
+  },
+  {
+    name: "lays barbecue",
+    count: "23",
+  },
+  {
+    name: "lays classic",
+    count: "29",
+  },
+  {
+    name: "no drink",
+    count: "12347",
+  },
+  {
+    name: "water bottle",
+    count: "119",
+  },
+  {
+    name: "apple juice",
+    count: "232",
+  },
+  {
+    name: "coke",
+    count: "448",
+  },
+  {
+    name: "dr. pepper",
+    count: "286",
+  },
+  {
+    name: "sprite",
+    count: "215",
+  },
+  {
+    name: "diet coke",
+    count: "172",
+  },
+  {
+    name: "powerade",
+    count: "90",
+  },
+  {
+    name: "lemonade",
+    count: "74",
+  },
+
 ];
 
 const Row2 = () => {
