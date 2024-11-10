@@ -45,18 +45,6 @@ const Navbar = (props: Props) => {
             predictions
           </Link>
         </Box>
-        <Box sx={{ "&:hover": { color: palette.primary[100] } }}>
-          <Link
-            to="/categorical"
-            onClick={() => setSelected("categorical")}
-            style={{
-              color: selected === "categorical" ? "inherit" : palette.grey[700],
-              textDecoration: "inherit",
-            }}
-          >
-            categorical
-          </Link>
-        </Box>
       </FlexBetween>
     </FlexBetween>
   );

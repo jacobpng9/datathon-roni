@@ -348,7 +348,7 @@ const Row2 = () => {
         </FlexBetween>
       </DashboardBox>
       <DashboardBox gridArea="f">
-        <BoxHeader title="Product Prices vs Predicted Expenses" sideText="+4%" />
+        <BoxHeader title="Predicted Expenses vs Order Prices" sideText="+4%" />
         <ResponsiveContainer width="100%" height="100%">
           <ScatterChart
             margin={{
